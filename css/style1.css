@@ -1,0 +1,280 @@
+/*ceci c'est le css du nav-bar*/
+.header2 .menu-toogle{
+   cursor: pointer;
+
+}
+ .bar{
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    margin: 5px 0;
+
+
+}
+.bordure{
+    background-color: rgb(243, 119, 36);
+    position: relative;
+    margin-top: -55px;
+}
+.header2{
+    
+    background-color: rgb(196, 58, 3);
+    justify-content: space-between;
+    height: 1pxpx;
+    
+}
+.header2 img{
+    width: 80px;
+    height: 80px;
+    margin: 12px;
+    border-radius: 100px;
+   
+}
+.header2 .header1 li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px
+    
+    
+
+    
+}
+.header2 .header1 li a{
+    margin: 20px;
+    
+}
+.header2 .header1 ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 850px;
+    margin-top: -50px;
+   
+}
+/*Ceci est le css home*/
+.section1{
+    text-align: center;
+    margin: 60px;
+    top: 10px;
+}
+.section1 h1{
+    color: rgb(252, 249, 247);
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    
+
+}
+.section1 .button1 button{
+    margin: 30px;
+    padding: 15px;
+    color: gray;
+    border-radius: 10px;
+    border-color: rgb(231, 90, 8);
+    filter: drop-shadow(10px 5px 5px rgb(8, 8, 8));
+
+}
+.section1 .button1 button:hover{
+    
+    background-color: rgb(231, 90, 8);;
+    color: black;
+}
+/*ceci est la partie du projet*/
+.section2 .div2{
+    display: flex;
+    margin: 10px;
+}
+.section2 .div2 p{
+    margin: 10px;
+}
+.section2 .div1{
+    text-align: center;
+}
+.section2 .div1 h1{
+    color: rgb(245, 244, 243);
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+
+}
+.section2 .div1 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.section2 .div2 h2{
+    text-align: center;
+}
+.section2 .div2 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.section2 .div2 img{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    border-radius: 15px;
+    filter: drop-shadow(10px 5px 5px rgb(8, 8, 8));
+    
+    
+   
+}
+/*ceci est la partie du contact*/
+.section3{
+    padding: 20px;
+    
+}
+.section3 .div3{
+    text-align: center;
+   
+}
+.section3 .div3 h2{
+    color: rgb(250, 247, 245);
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    
+
+}
+.section3 .div3 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.section3 .div4{
+    text-align: center;
+    margin: 20px;
+}
+.section3 .div4 input{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(231, 90, 8);
+    filter: drop-shadow(10px 5px 5px rgb(8, 8, 8));
+
+}
+.section3 .div5{
+    text-align: center;
+    margin: 20px;
+}
+.section3 .div5 button{
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 20px;
+    
+    border-radius: 15px;
+    border-color: rgb(231, 90, 8);
+    border-left: 5px;
+    background-color: gray;
+    filter: drop-shadow(10px 5px 5px rgb(8, 8, 8));
+}
+.section3 .div5 button:hover{
+   
+    background-color: rgb(231, 90, 8);;
+}
+/*ceci c'est le css du footer*/
+.footer1{
+    background-color: rgb(196, 58, 3);
+    padding: 10px;
+}
+.footer1 p{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: wheat;
+    font-size: 20px;
+}
+/*ceci est la partie responsive de la page*/ 
+
+
+@media screen and (max-width:1100px) {
+    .header2 .header1 ul{
+        margin-left: 50%;
+    }
+    .section2 .div2{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .section2 .div2 h2{
+        text-align: center;
+    }
+    .section2 .div2 p{
+        text-align: center;
+    }
+    .section3 .div5 button{ 
+        margin: 20px;
+    }
+    .header2 .header1 ul { 
+        
+        margin-left: 60%;
+        
+    }
+    .header2 .header1 ul a{ 
+      font-size: 140%;
+      margin: 70%;
+    }
+    .header2  .menu-toogle{ 
+        position: absolute;
+       
+        margin-left: 90%;
+        margin-top: -6%;
+      
+
+       
+ }
+    
+}
+@media screen and (max-width:500px) {
+    .header2 .header1 ul{
+        margin-left: 30%;
+    }
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section2 .div2 h2{
+        text-align: center;
+    }
+    .section2 .div2 p{
+        text-align: center;
+    } 
+    .section1 h1{
+        font-size: 160%;
+    } 
+    .header2 .header1 li a{
+        font-size: 17px;
+    }
+    .section2 .div2 {
+        text-align: center;
+    }
+    .section2 .div2{
+       margin: 0%;
+    }
+    .section3 .div5 button{ 
+        margin: 20px;
+    }
+    .section2 .div2 img { 
+        margin-right: 15%;
+    }
+    .header2 .header1 ul { 
+        
+        margin-left: 40%;
+        
+    }
+    .header2 .header1 ul a{ 
+      font-size: 90%;
+      margin: 5px;
+    }
+   
+.header2  .menu-toogle{ 
+        position: absolute;
+        margin-left: 80%;
+        margin-top: -13%;
+        
+
+       
+ }
+ .menu.active{
+    display: flex;
+ }
+
+}
+
+@media screen and (min-width:1100px) {
+    .bar{
+        display: none;
+    }
+}

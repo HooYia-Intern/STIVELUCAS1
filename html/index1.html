@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home/stive/mes projet/new projet 1/css/style1.css">
+    <title>SELLWATCH.COM</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!--ceci est le nav-bar-->
+        <header class="header2">
+            <img src="/home/stive/mes projet/new projet 1/image/logo.PNG">
+            <div class="header1" >
+                <ul class="menu">
+                    <li> <a href="#">HOME</a></li>
+ <li> <a href="#">PROJET</a></li>
+                    <li> <a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="menu-toogle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                
+            </div>
+        </header>
+        <div class="bordure">
+            <!--ceci est la partie home-->
+            <section class="section1">
+                <div>
+                    <h1>WELCOME TO SELLWATCH.COM</h1>
+                    <div class="button1">
+                        <button type="button">contact us</button>
+                        <button type="button">join us</button>
+                    </div>
+                </div>
+            </section>
+            <!--ceci est la partie montre-->
+            <section class="section2">
+                <div class="div1">
+                    <h1>PRODUIT</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet architecto quod tenetur, omnis
+                        voluptate iure. <br> Alias, dicta? Ea aliquam incidunt obcaecati distinctio voluptatibus
+                        corrupti
+                        ratione?</p>
+                </div>
+
+                <div class="div2">
+
+                    <div>
+                        <h2>watch 1</h2>
+                        <img src="/home/stive/mes projet/new projet 1/image/montre1.PNG">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, unde?</p>
+                    </div>
+                    <div>
+                        <h2>watch 2</h2>
+                        <img src="/home/stive/mes projet/new projet 1/image/montre2.PNG">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, unde?</p>
+                    </div>
+                    <div>
+                        <h2>watch 3</h2>
+                        <img src="/home/stive/mes projet/new projet 1/image/montre1.PNG">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, unde?</p>
+                    </div>
+                </div>
+            </section>
+            <!--ceci est la partie contact -->
+            <section class="section3">
+                <div class="div3">
+                    <h2>CONTACT</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam, officiis quaerat
+                        voluptatem
+                        suscipit molestiae.</p>
+                </div>
+
+                <form method="post">
+                    <div class="div4">
+                        <input type="text" name="name" placeholder="name" required><br>
+                        <input type="email" name="email" placeholder="example@gmail.com" required><br>
+                        <input type="number" name="number" placeholder="phonenumber" required>
+                    </div>
+                    <div class="div5">
+                        <button type="submit">submit</button>
+                        <button type="reset">reset</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!--ceci est le footer-->
+        <footer class="footer1">
+            <p>&copy;copyright 2023--! SELLWATCH.COM</p>
+        </footer>
+    </div>
+</body>
+<script>
+    function toggleMenu(){ 
+        var menu = document.querySelector(".menu");
+        menu.classList.toggle("active");
+    }
+</script>
+
+</html>

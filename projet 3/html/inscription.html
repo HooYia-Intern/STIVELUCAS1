@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>inscription</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SIGN IN </h1>
+        <form action="#" method="post">
+            <label for="name" id="label1">User name:</label>
+            <input type="text" name="name" required class="transparent-input">
+            <div class="error-message"></div>
+
+            <label for="email" id="label1">Email:</label>
+            <input type="email" name="email" placeholder="example@gmail.com" required class="transparent-input">
+            <div class="error-message"></div>
+
+            <label for="name" id="label1"> Password:</label>
+            <input type="password" name="password" required minlength="8" id="password" class="transparent-input">
+            <div class="error-message"></div>
+
+            <label for="name" id="label1">Confirm-password:</label>
+            <input type="password" name="confirm-password" required minlength="8" id="confirm-password" class="transparent-input">
+            <div class="error-message" id="password-error"></div>
+
+            <label for="phone" id="label1">Number-phone:</label>
+            <input type="number" name="number" placeholder="(123) 456-7890" pattern="\(\d{3}\)\s\d{3}-\d{4}" id="phone" class="transparent-input">
+            <div class="error-message" id="phone-error"></div>
+
+            <button type="submit" id="submit-btn" >submit</button>
+        </form>
+    </div>
+    <script src="../javascript/validation.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>scientifique calculator</title>
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>SCIENTIFIQUE CALCULATOR</h1>
+        <div class="display">
+            <input type="text" placeholder="0" id="screen">
+        </div>
+        <div class="btns">
+            <div class="rown">
+                <button id="ce" onclick=" space()">CE</button>
+                <button onclick="fact()">X!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" onclick="spaceall()">AC</button>
+            </div>
+            <div class="rown">
+                <button onclick="sin()">sin</button>
+                <button onclick="pi()">pi</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">/</button>
+            </div>
+            <div class="rown">
+                <button onclick="cos()">cos</button>
+                <button onclick="log()">log</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">*</button>
+            </div>
+            <div class="rown">
+                <button onclick="tan()">tan</button>
+                <button onclick="squart()">root</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">-</button>
+            </div>
+            <div class="rown">
+                <button onclick="exp()">e</button>
+                <button onclick="power()">x <span style="position: relative; bottom: 0.5em; right: .2em;">y</span></button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn">+</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="../javascript/javasript.js"></script>
+    
+</body>
+</html>

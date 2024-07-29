@@ -1,0 +1,120 @@
+/*css of body*/
+body{
+    padding: 0;
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.205);
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    opacity: 1;
+    color: rgb(10, 10, 10);
+}
+/*css of container the calculator*/
+.container{
+    width: 55%;
+    height: 75vh;
+    box-shadow: 7px 7px 7px rgb(98, 0, 255) , -7px -7px 7px rgba(98, 0, 255, 0.349);
+    border: none;
+    border-radius: 2em;
+    padding: 1em;
+    margin-left: 20%;
+    background-color: rgba(92, 92, 255, 0.452);
+}
+/*css of screen the calclator*/
+.display #screen{
+    width: 90%;
+    height: 12vh;
+    text-align: right;
+    font-size: 2em;
+    border: none;
+    box-shadow:inset 7px 7px 7px rgb(131, 131, 131) ,inset -7px -7px 7px rgba(163, 163, 163, 0.281);
+    border-radius: 0.3em;
+    padding-right: 2%;
+    opacity: 1;
+
+}
+/*delete the color of input*/
+.display input:focus{
+   outline: none;
+}
+/*css of button of calculator*/
+.container .btns{
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.btns .rown button{
+    width: 12%;
+    height: 7vh;
+    font-size: 1em;
+    outline: none;
+    margin: 5px;
+    border: none;
+    border-radius: 8%;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0) , -5px -5px 5px rgb(255, 255, 255);
+    background-color: rgba(48, 48, 109, 0.582);
+    transition: 0.5s;
+
+}
+.btns .rown button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgba(48, 48, 109, 0.582);
+    opacity: 0.8;
+}
+
+/*css of button egal*/
+#eval{
+    background-color: rgb(0, 255, 149);
+    box-shadow: 5px 5px 5px rgb(7, 255, 234) , -5px -5px 5px rgba(0, 255, 221, 0.349);
+}
+#eval:hover{
+    background-color: rgb(0, 255, 149);
+    opacity: 0.5;
+}
+
+/*css of button ce*/
+#ce{
+    background-color: rgb(255, 0, 221);
+    box-shadow: 5px 5px 5px rgb(255, 0, 255) , -5px -5px 5px rgba(226, 3, 255, 0.288);
+}
+
+/*css of button ac*/
+#ac{
+    background-color: rgb(255, 3, 3);
+    box-shadow: 5px 5px 5px rgb(255, 0, 0) , -5px -5px 5px rgba(255, 3, 3, 0.288);
+}
+
+
+
+/*css of responsive calculator*/
+/*css of sreen the 500px*/
+@media screen and (max-width:500px) {
+    .container{
+        width: 80%;
+        margin-left: 4%;
+        height: 43vh;
+    }
+    .btns .rown button{
+        font-size: 0.5em;
+        height: 3.5vh;
+        margin: 1%;
+        width: 10%;
+    }
+    .container h1{
+        font-size: 1em;
+    }
+}
+/*css of sreen between 500px and 856px*/
+@media screen and (max-width:856px)  and (min-width:500px){
+    .container{
+        width: 80%;
+        margin-left: 4%;
+        height: 63vh;
+    }
+}
